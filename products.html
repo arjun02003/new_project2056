@@ -45,41 +45,8 @@
 
         <section class="section category-products">
             <div class="container">
-                <div class="category-grid">
-                    <article class="category-card">
-                        <a href="category.html" class="category-card__media-link" aria-label="Open Linear Guideways category">
-                            <div class="category-card__media">
-                                <img src="assets/images/categories/linear-guideways.jpg" alt="Linear Guideways" loading="lazy">
-                            </div>
-                        </a>
-                        <div class="category-card__content">
-                            <h3>Linear Guideways</h3>
-                            <p>High precision linear guide solutions for industrial automation, CNC, and heavy-duty motion systems.</p>
-                            <a href="category.html" class="button button-primary">Explore Category →</a>
-                        </div>
-                    </article>
-
-                    <article class="category-card">
-                        <div class="category-card__media">
-                            <img src="assets/images/categories/ball-screw.jpg" alt="Ball Screw" loading="lazy">
-                        </div>
-                        <div class="category-card__content">
-                            <h3>Ball Screw</h3>
-                            <p>Reliable ball screw systems for low backlash and accurate positioning in demanding applications.</p>
-                            <a href="#" class="button button-primary">Explore Category →</a>
-                        </div>
-                    </article>
-
-                    <article class="category-card">
-                        <div class="category-card__media">
-                            <img src="assets/images/categories/gear-box.jpg" alt="Gear Box" loading="lazy">
-                        </div>
-                        <div class="category-card__content">
-                            <h3>Gear Box</h3>
-                            <p>Robust gearboxes engineered for efficient torque transmission and industrial reliability.</p>
-                            <a href="#" class="button button-primary">Explore Category →</a>
-                        </div>
-                    </article>
+                <div class="category-grid" id="categories-container">
+                    <!-- Categories will be loaded here dynamically by catalog.js -->
                 </div>
             </div>
         </section>
@@ -159,6 +126,8 @@
         </div>
     </footer>
 
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/catalog.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

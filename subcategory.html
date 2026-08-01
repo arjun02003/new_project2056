@@ -41,48 +41,22 @@
                     <span>›</span>
                     <a href="products.html">Products</a>
                     <span>›</span>
-                    <a href="category.html">Linear Guideways</a>
+                    <a href="category.html" id="breadcrumb-cat-link">Category</a>
                     <span>›</span>
-                    <span aria-current="page">Series</span>
+                    <span id="breadcrumb-series" aria-current="page">Series</span>
                 </nav>
 
                 <div class="category-header">
-                    <h1>Linear Guideway Series</h1>
-                    <p>Browse premium series and model options tailored for precision motion and industrial automation.</p>
+                    <h1 id="series-title">Series Models</h1>
+                    <p id="series-desc">Browse premium model options tailored for precision motion and industrial automation.</p>
                 </div>
             </div>
         </section>
 
         <section class="section category-products">
             <div class="container">
-                <div class="category-grid">
-                    <article class="category-card">
-                        <div class="category-card__media">
-                            <img src="assets/images/categories/hg-series.jpg" alt="HG Series" loading="lazy">
-                        </div>
-                        <div class="category-card__content">
-                            <h3>HG Series</h3>
-                            <p>High rigidity and precision engineered for demanding industrial systems.</p>
-                        </div>
-                    </article>
-                    <article class="category-card">
-                        <div class="category-card__media">
-                            <img src="assets/images/categories/eg-series.jpg" alt="EG Series" loading="lazy">
-                        </div>
-                        <div class="category-card__content">
-                            <h3>EG Series</h3>
-                            <p>Compact and efficient for space-conscious machine design.</p>
-                        </div>
-                    </article>
-                    <article class="category-card">
-                        <div class="category-card__media">
-                            <img src="assets/images/categories/guide-blocks.jpg" alt="Guide Blocks" loading="lazy">
-                        </div>
-                        <div class="category-card__content">
-                            <h3>Guide Blocks</h3>
-                            <p>Reliable guide block options compatible with multiple rail systems.</p>
-                        </div>
-                    </article>
+                <div class="category-grid" id="models-container">
+                    <!-- Models will be loaded here dynamically by catalog.js -->
                 </div>
             </div>
         </section>
@@ -99,6 +73,8 @@
         </div>
     </footer>
 
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/catalog.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -4,15 +4,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIWIN | Contact</title>
+    <title>HIWIN | Contact Us</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/animation.css">
+    <style>
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .contact-info { display: flex; flex-direction: column; gap: 30px; }
+        .contact-info h3 { font-size: 1.5rem; color: #10233f; margin: 0 0 10px; }
+        .contact-info p { color: rgba(16, 35, 63, 0.75); line-height: 1.8; margin: 0; font-size: 1.05rem; }
+        .contact-form { display: grid; gap: 20px; background: #ffffff; padding: 40px; border-radius: 20px; box-shadow: 0 24px 60px rgba(15, 40, 80, 0.08); border: 1px solid rgba(11, 94, 215, 0.12); }
+        .form-group { display: flex; flex-direction: column; gap: 8px; }
+        .form-group label { font-weight: 600; color: #10233f; font-size: 0.95rem; }
+        .form-group input, .form-group textarea { width: 100%; padding: 14px 18px; border-radius: 8px; border: 1px solid rgba(16, 35, 63, 0.2); font-family: inherit; font-size: 1rem; outline: none; transition: border-color 0.3s; }
+        .form-group input:focus, .form-group textarea:focus { border-color: var(--accent); }
+        @media (max-width: 820px) { .contact-grid { grid-template-columns: 1fr; } }
+    </style>
 </head>
 <body>
-    <!-- HIWIN contact page starter structure -->
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
 
-    <script src="assets/js/menu.js"></script>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand logo-link">
+                <img src="assets/images/logo/logo.png" alt="HIWIN Logo">
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html#technologies">ABOUT</a>
+                <a href="index.html#latest-products">PRODUCTS</a>
+                <a href="contact.html" aria-current="page">CONTACT</a>
+            </nav>
+
+            <div class="search-panel">
+                <input type="search" placeholder="Search products" aria-label="Search products">
+                <button type="button" class="search-button" aria-label="Search">
+                    <span class="search-icon">🔍</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section category-hero">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>›</span>
+                    <span aria-current="page">Contact</span>
+                </nav>
+
+                <div class="category-header">
+                    <h1>CONTACT US</h1>
+                    <p>Get in touch with our engineering and support team.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <div>
+                        <h3>Headquarters</h3>
+                        <p>HIWIN Industrial Automation<br>Nagpur, Maharashtra, India</p>
+                    </div>
+                    <div>
+                        <h3>Contact Details</h3>
+                        <p>Phone: +91 XXXXX XXXXX<br>Email: info@hiwin.com</p>
+                    </div>
+                    <div>
+                        <h3>Working Hours</h3>
+                        <p>Monday - Saturday<br>9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent Successfully!');">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required placeholder="Product Enquiry">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="button button-primary">Send Message →</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="assets/images/logo/logo.png" alt="HIWIN Logo">
+                </div>
+                <p>HIWIN Industrial Automation delivers precision motion systems and industrial components for manufacturing excellence.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">F</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="YouTube">Y</a>
+                    <a href="#" aria-label="Instagram">I</a>
+                </div>
+            </div>
+            <div class="footer-badges">
+                <img src="assets/images/logo/logo.png" alt="ISO Quality Badge 1">
+                <img src="assets/images/logo/logo.png" alt="ISO Quality Badge 2">
+                <img src="assets/images/logo/logo.png" alt="ISO Quality Badge 3">
+            </div>
+            <div class="footer-newsletter">
+                <p class="newsletter-label">Newsletter</p>
+                <form id="newsletter-form">
+                    <input id="newsletter-email" type="email" placeholder="Enter your email address" aria-label="Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p class="newsletter-note">Get the latest HIWIN product updates, technical news and automation insights in your inbox.</p>
+            </div>
+        </div>
+        <div class="container footer-grid">
+            <div class="footer-column">
+                <h3>About HIWIN</h3>
+                <a href="about.html">About Us</a>
+                <a href="#">Company Profile</a>
+                <a href="#">Our Mission</a>
+                <a href="#">Careers</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-column">
+                <h3>Products</h3>
+                <a href="products.html">Linear Guideways</a>
+                <a href="products.html">Ball Screw</a>
+                <a href="products.html">Gear Box</a>
+                <a href="products.html">Servo Motor &amp; Drive</a>
+                <a href="products.html">Stepper Motor</a>
+                <a href="products.html">Bearings</a>
+                <a href="products.html">Hard Chrome Shaft</a>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <a href="#">Technical Support</a>
+                <a href="#">Product Catalog</a>
+                <a href="#">Downloads</a>
+                <a href="#">FAQs</a>
+                <a href="#">Warranty</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>HIWIN Industrial Automation</p>
+                <p>Nagpur, Maharashtra, India</p>
+                <p>Phone: +91 XXXXX XXXXX</p>
+                <p>Email: info@hiwin.com</p>
+                <p>Working Hours: Mon–Sat : 9:00 AM – 6:00 PM</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 HIWIN Industrial Automation. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms &amp; Conditions</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -42,12 +42,12 @@
                     <span>›</span>
                     <a href="products.html">Products</a>
                     <span>›</span>
-                    <span aria-current="page">Linear Guideways</span>
+                    <span id="breadcrumb-cat" aria-current="page">Linear Guideways</span>
                 </nav>
 
                 <div class="category-header">
-                    <h1>LINEAR GUIDEWAYS</h1>
-                    <p>Explore our premium linear guideway solutions for precision motion control and industrial automation.</p>
+                    <h1 id="category-title">LINEAR GUIDEWAYS</h1>
+                    <p id="category-desc">Explore our premium linear guideway solutions for precision motion control and industrial automation.</p>
                 </div>
 
                 <div class="section-title-wrap">
@@ -58,45 +58,8 @@
 
         <section class="section category-products">
             <div class="container">
-                <div class="category-grid">
-                    <article class="category-card" id="card-hg-series">
-                        <a href="subcategory.html?series=hg" class="category-card__media-link" aria-label="Explore HG Series">
-                            <div class="category-card__media">
-                                <img src="assets/images/categories/hg-series.jpg" alt="HG Series Linear Guideway" loading="lazy">
-                            </div>
-                        </a>
-                        <div class="category-card__content">
-                            <h3>HG Series</h3>
-                            <p>Heavy-load linear guideways designed for high precision, high rigidity and smooth linear motion.</p>
-                            <a href="subcategory.html?series=hg" class="button button-primary">Explore Models →</a>
-                        </div>
-                    </article>
-
-                    <article class="category-card" id="card-eg-series">
-                        <a href="subcategory.html?series=eg" class="category-card__media-link" aria-label="Explore EG Series">
-                            <div class="category-card__media">
-                                <img src="assets/images/categories/eg-series.jpg" alt="EG Series Linear Guideway" loading="lazy">
-                            </div>
-                        </a>
-                        <div class="category-card__content">
-                            <h3>EG Series</h3>
-                            <p>Low-profile linear guideways for compact industrial automation applications.</p>
-                            <a href="subcategory.html?series=eg" class="button button-primary">Explore Models →</a>
-                        </div>
-                    </article>
-
-                    <article class="category-card" id="card-guide-blocks">
-                        <a href="subcategory.html?series=blocks" class="category-card__media-link" aria-label="Explore Guide Blocks">
-                            <div class="category-card__media">
-                                <img src="assets/images/categories/guide-blocks.jpg" alt="Precision Guide Blocks" loading="lazy">
-                            </div>
-                        </a>
-                        <div class="category-card__content">
-                            <h3>Guide Blocks</h3>
-                            <p>Precision guide blocks compatible with multiple rail series.</p>
-                            <a href="subcategory.html?series=blocks" class="button button-primary">Explore Models →</a>
-                        </div>
-                    </article>
+                <div class="category-grid" id="series-container">
+                    <!-- Series will be loaded here dynamically by catalog.js -->
                 </div>
             </div>
         </section>
@@ -176,6 +139,8 @@
         </div>
     </footer>
 
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/catalog.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
