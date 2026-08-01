@@ -173,6 +173,7 @@ function initGlobalSearch() {
         function executeSearch() {
             const query = input.value.trim();
             if (query) {
+                sessionStorage.setItem('hiwin_search_query', query);
                 window.location.href = 'search.html?q=' + encodeURIComponent(query);
             }
         }

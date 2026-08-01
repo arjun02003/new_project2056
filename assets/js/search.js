@@ -5,7 +5,17 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
-    const query = params.get('q');
+    let query = params.get('q');
+    
+    // Fallback to sessionStorage in case server redirects and drops the query parameter
+    if (!query) {
+        query = sessionStorage.getItem('hiwin_search_query');
+        if (query) {
+            window.history.replaceState({}, '', '?q=' + encodeURIComponent(query));
+        }
+    } else {
+        sessionStorage.setItem('hiwin_search_query', query);
+    }
     
     const queryDisplay = document.getElementById('search-query-display');
     const resultsContainer = document.getElementById('search-results-container');
