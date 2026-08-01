@@ -53,7 +53,7 @@ const HIWIN_DATA = {
         // Linear Guideways
         { id: 'hg-series', categoryId: 'linear-guideways', name: 'HG Series', image: 'assets/images/categories/hg-series.jpg', description: 'Heavy-load linear guideways designed for high precision, high rigidity and smooth linear motion.' },
         { id: 'eg-series', categoryId: 'linear-guideways', name: 'EG Series', image: 'assets/images/categories/eg-series.jpg', description: 'Low-profile linear guideways for compact industrial automation applications.' },
-        { id: 'guide-blocks', categoryId: 'linear-guideways', name: 'Guide Blocks', image: 'assets/images/categories/guide-blocks.jpg', description: 'Precision guide blocks compatible with multiple rail series.' },
+
         
         // Ball Screw
         { id: 'rolled-ball-screw', categoryId: 'ball-screw', name: 'Rolled Ball Screw', image: 'assets/images/categories/ball-screw.jpg', description: 'Cost-effective rolled ball screws for standard applications.' },
@@ -90,16 +90,7 @@ const HIWIN_DATA = {
         { id: 'egr15c', seriesId: 'eg-series', name: 'EGR15C', image: 'assets/images/products/hgr20.jpg', description: '15mm Low Profile Linear Guideway' },
         { id: 'egr20c', seriesId: 'eg-series', name: 'EGR20C', image: 'assets/images/products/hgr20.jpg', description: '20mm Low Profile Linear Guideway' },
         
-        // Guide Blocks Models
-        { id: 'hgh20ca', seriesId: 'guide-blocks', name: 'HGH20CA', image: 'assets/images/categories/guide-blocks.jpg', description: 'Square Type Guide Block' },
-        { id: 'hgh25ca', seriesId: 'guide-blocks', name: 'HGH25CA', image: 'assets/images/categories/guide-blocks.jpg', description: 'Square Type Guide Block' },
-        { id: 'hgh35ca', seriesId: 'guide-blocks', name: 'HGH35CA', image: 'assets/images/categories/guide-blocks.jpg', description: 'Square Type Guide Block' },
-        { id: 'hgw20ca', seriesId: 'guide-blocks', name: 'HGW20CA', image: 'assets/images/categories/guide-blocks.jpg', description: 'Flange Type Guide Block' },
-        { id: 'hgw25ca', seriesId: 'guide-blocks', name: 'HGW25CA', image: 'assets/images/categories/guide-blocks.jpg', description: 'Flange Type Guide Block' },
-        { id: 'egh15ca', seriesId: 'guide-blocks', name: 'EGH15CA', image: 'assets/images/categories/guide-blocks.jpg', description: 'Low Profile Guide Block' },
-        { id: 'egh20ca', seriesId: 'guide-blocks', name: 'EGH20CA', image: 'assets/images/categories/guide-blocks.jpg', description: 'Low Profile Guide Block' },
-        { id: 'egh15c', seriesId: 'guide-blocks', name: 'EGH15C', image: 'assets/images/categories/guide-blocks.jpg', description: 'Low Profile Guide Block' },
-        { id: 'egh20c', seriesId: 'guide-blocks', name: 'EGH20C', image: 'assets/images/categories/guide-blocks.jpg', description: 'Low Profile Guide Block' },
+
 
         // Rolled Ball Screw
         { id: '16x5', seriesId: 'rolled-ball-screw', name: '16×5 (16mm)', image: 'assets/images/products/ball-screw-1605.jpg', description: '16mm Diameter, 5mm Lead' },
