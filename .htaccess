@@ -1,0 +1,18 @@
+# HIWIN Root .htaccess
+# Protect sensitive files and directories
+
+# Deny access to environment files
+<FilesMatch "^\.(env|htaccess)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Deny access to config directory
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^config/ - [F,L]
+    RewriteRule ^database/ - [F,L]
+    RewriteRule ^includes/ - [F,L]
+    RewriteRule ^functions/ - [F,L]
+    RewriteRule ^logs/ - [F,L]
+</IfModule>
