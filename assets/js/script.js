@@ -162,6 +162,30 @@ function initScrollReveal() {
     revealElements.forEach((element) => observer.observe(element));
 }
 
+function initGlobalSearch() {
+    const searchInputs = document.querySelectorAll('.search-panel input[type="search"]');
+    const searchBtns = document.querySelectorAll('.search-panel .search-button');
+
+    searchInputs.forEach((input, index) => {
+        const btn = searchBtns[index];
+        if (!input || !btn) return;
+
+        function executeSearch() {
+            const query = input.value.trim();
+            if (query) {
+                window.location.href = 'search.html?q=' + encodeURIComponent(query);
+            }
+        }
+
+        btn.addEventListener('click', executeSearch);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                executeSearch();
+            }
+        });
+    });
+}
+
 function initHomepage() {
     if (slider && slides.length > 0) {
         initSlider();
@@ -171,6 +195,7 @@ function initHomepage() {
     initNewsletterForm();
     initHeaderScroll();
     initScrollReveal();
+    initGlobalSearch();
 }
 
 initHomepage();

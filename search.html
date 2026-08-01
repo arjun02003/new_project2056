@@ -44,27 +44,15 @@
 
                 <div class="category-header">
                     <h1>Search Results</h1>
-                    <p>Showing results for your search query.</p>
+                    <p id="search-query-display">Showing results for your search query.</p>
                 </div>
             </div>
         </section>
 
         <section class="section category-products">
             <div class="container">
-                <div class="category-grid">
-                    <!-- Placeholder results mimicking catalog styling -->
-                    <article class="category-card">
-                        <a href="product-details.html?product=hgr20c" class="category-card__media-link" aria-label="Explore HGR20C">
-                            <div class="category-card__media">
-                                <img src="assets/images/products/hgr20.jpg" alt="HGR20C" loading="lazy">
-                            </div>
-                        </a>
-                        <div class="category-card__content">
-                            <h3>HGR20C</h3>
-                            <p>20mm Heavy Load Linear Guideway</p>
-                            <a href="product-details.html?product=hgr20c" class="button button-primary">View Details →</a>
-                        </div>
-                    </article>
+                <div class="category-grid" id="search-results-container">
+                    <!-- Search results will be injected here dynamically -->
                 </div>
             </div>
         </section>
@@ -144,6 +132,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/data.js"></script>
     <script src="assets/js/search.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
